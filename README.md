@@ -8,31 +8,31 @@ A simple and interactive Node.js + Express + PostgreSQL application that lets us
 
 
 🚀 Features
-Add a country to your visited list by typing its name
-Prevents duplicate entries with clear error messages
-Validates country names using a master countries table
-Displays total number of visited countries
-Fully asynchronous using async/await
-Uses EJS for server-side rendered pages
+1.Add a country to your visited list by typing its name.
+2.Prevents duplicate entries with clear error messages.
+3.Validates country names using a master countries table.
+4.Displays total number of visited countries.
+5.Fully asynchronous using async/await.
+6.Uses EJS for server-side rendered pages.
 
 
 🛠️ Tech Stack
-Node.js
-Express.js
-PostgreSQL
-EJS
-body-parser
+1.Node.js
+2.Express.js
+3.PostgreSQL
+4.EJS
+5.body-parser
 
 
 📦 Database Structure
 
-countries
+countries:
 
 column	           type
 country_code	    VARCHAR
 country_name	    TEXT
 
-visited_countries
+visited_countries:
 
 column	          type
 country_code	    VARCHAR
