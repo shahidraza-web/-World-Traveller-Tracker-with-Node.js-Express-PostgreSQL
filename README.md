@@ -2,7 +2,7 @@
 🌍 World Traveller Tracker
 A simple and interactive Node.js + Express + PostgreSQL application that lets users track the countries they have visited. The project stores country data in a PostgreSQL database and dynamically displays the visited countries count using EJS templates.
 
- ![Image Alt](image_url)
+ ![Image Alt](https://github.com/shahidraza-web/-World-Traveller-Tracker-with-Node.js-Express-PostgreSQL/blob/4c3e823dd4f8d45164e391fa465ccd9669143c50/traveltracker1.jpg)
 
 🚀 Features
 Add a country to your visited list by typing its name
