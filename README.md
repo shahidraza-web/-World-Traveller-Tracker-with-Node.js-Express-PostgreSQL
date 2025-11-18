@@ -25,29 +25,32 @@ A simple and interactive Node.js + Express + PostgreSQL application that lets us
 5.body-parser
 
 
-📦 Database Structure
-
-countries:
-
-column	           type
-country_code	    VARCHAR
-country_name	    TEXT
-
-visited_countries:
-
-column	          type
-country_code	    VARCHAR
-
-
 📸 How It Works
-User enters a country name
-App checks if the country exists in the countries table
-Extracts country_code and inserts it into visited_countries
-Prevents duplicates and catches invalid entries
-Renders updated data on the homepage
+1.User enters a country name
+2.App checks if the country exists in the countries table
+3.Extracts country_code and inserts it into visited_countries
+4.Prevents duplicates and catches invalid entries
+5.Renders updated data on the homepage
 
 💡 Future Improvements
-Add a world map that highlights visited countries
-User authentication
-Add delete functionality
-Track visited cities
+1.Add a world map that highlights visited countries
+2.User authentication
+3.Add delete functionality
+4.Track visited cities
+
+INSTALLATION INSTRUCTIONS:
+1. Make two tables in Postgres named countries and visited_countries
+   
+    CREATE TABLE countries (
+  country_code VARCHAR(5) PRIMARY KEY,
+  country_name TEXT NOT NULL
+);
+
+CREATE TABLE visited_countries (
+  country_code VARCHAR(5) PRIMARY KEY
+);
+
+2. Now import countries data from countries.csv file to countries table using postgres import functionality.
+3. Change directory to this projects folder in the terminal and run " npm i " command to install all the dependencies.
+4. change the password and required fields inside pg.client according to your postgres set up.
+5. Ctrl+s  and then run node index.js 
